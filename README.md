@@ -17,6 +17,8 @@ window.addEventListener('mousemove', function(ev) {
 })
 ```
 
+[Try this in your browser](https://github.com/mikolalysenko/mouse-event)
+
 # Install
 
 ```
@@ -42,9 +44,6 @@ Returns a bit vector, similar to `event.which` in WebKit encoding the state of t
 * `16` - button 5
 * ...
 * `1<<k`  - button k+1
-
-#### `mouse.element(event)
-Get the target element associated with the event
 
 #### `mouse.x(event)`
 Returns the relative x-coordinate of the mouse event
