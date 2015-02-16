@@ -17,7 +17,7 @@ window.addEventListener('mousemove', function(ev) {
 })
 ```
 
-[Try this in your browser](https://github.com/mikolalysenko/mouse-event)
+[Try this in your browser](https://mikolalysenko.github.io/mouse-event)
 
 # Install
 
