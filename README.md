@@ -2,7 +2,7 @@
 Provides a normalized, cross-browser, garbage-collection-free API for reading out the state of a mouse event.
 
 ### Why is this needed?
-Because it is 2015 and somehow every major browser still disagrees on even the moust basic details of MouseEvents.  Seriously guys.
+Because it is 2015 and somehow every major browser still disagrees on even the most basic details of MouseEvents.  Seriously guys.
 
 # Example
 
