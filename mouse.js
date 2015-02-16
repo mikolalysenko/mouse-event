@@ -15,7 +15,6 @@ function mouseButtons(ev) {
       }
     } else if('button' in ev) {
       var b = ev.button
-      console.log(b)
       if(b === 1) {
         return 4
       } else if(b === 2) {
