@@ -38,7 +38,7 @@ function mouseRelativeX(ev) {
     if('offsetX' in ev) {
       return ev.offsetX
     }
-    var target = ev.target || ev.srcElement
+    var target = mouseElement(ev)
     if('clientX' in ev) {
       return ev.clientX - target.clientLeft
     }
@@ -55,7 +55,7 @@ function mouseRelativeY(ev) {
     if('offsetY' in ev) {
       return ev.offsetY
     }
-    var target = ev.target || ev.srcElement
+    var target = mouseElement(ev)
     if('clientY' in ev) {
       return ev.clientY - target.clientTop
     }
