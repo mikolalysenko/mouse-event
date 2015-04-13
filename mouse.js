@@ -36,15 +36,11 @@ exports.element = mouseElement
 function mouseRelativeX(ev) {
   if(typeof ev === 'object') {
     if('offsetX' in ev) {
+      console.log('offset')
       return ev.offsetX
     }
     var target = mouseElement(ev)
-    if('clientX' in ev) {
-      return ev.clientX - target.clientLeft
-    }
-    if('pageX' in ev) {
-      return ev.pageX - target.offsetLeft
-    }
+    return ev.clientX - target.offsetLeft
   }
   return 0
 }
@@ -56,12 +52,7 @@ function mouseRelativeY(ev) {
       return ev.offsetY
     }
     var target = mouseElement(ev)
-    if('clientY' in ev) {
-      return ev.clientY - target.clientTop
-    }
-    if('pageX' in ev) {
-      return ev.pageY - target.offsetTop
-    }
+    return ev.clientY - target.offsetTop
   }
   return 0
 }
