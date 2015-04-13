@@ -36,7 +36,6 @@ exports.element = mouseElement
 function mouseRelativeX(ev) {
   if(typeof ev === 'object') {
     if('offsetX' in ev) {
-      console.log('offset')
       return ev.offsetX
     }
     var target = mouseElement(ev)
