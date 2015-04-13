@@ -1,6 +1,6 @@
 {
   "name": "mouse-event",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cross browser mouse event property access",
   "main": "mouse.js",
   "directories": {
