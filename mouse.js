@@ -39,7 +39,8 @@ function mouseRelativeX(ev) {
       return ev.offsetX
     }
     var target = mouseElement(ev)
-    return ev.clientX - target.offsetLeft
+    var bounds = target.getBoundingClientRect()
+    return ev.clientX - bounds.left
   }
   return 0
 }
@@ -51,7 +52,8 @@ function mouseRelativeY(ev) {
       return ev.offsetY
     }
     var target = mouseElement(ev)
-    return ev.clientY - target.offsetTop
+    var bounds = target.getBoundingClientRect()
+    return ev.clientY - bounds.top
   }
   return 0
 }
